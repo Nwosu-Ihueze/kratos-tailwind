@@ -4,60 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kratos</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white mb-3">
-        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+  <!--Nav-->
+  
+  
+    <div class="container mx-auto items-center px-4">
+      <nav class=" relative md:flex md:flex-wrap justify-between items-center px-2 py-3">
+          <div class="flex justify-between">
             <a class="inline-block mr-4 py-2 whitespace-nowrap" href="#">
-                <svg width="114" height="36" viewBox="0 0 114 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.64 17.925H6.735C7.115 17.925 7.42 17.88 7.65 17.79C7.88 17.69 8.09 17.525 8.28 17.295L15.435 9.195C15.635 8.935 15.845 8.755 16.065 8.655C16.285 8.555 16.555 8.505 16.875 8.505H19.335L11.145 17.76C10.945 18 10.75 18.2 10.56 18.36C10.38 18.51 10.185 18.635 9.975 18.735C10.245 18.825 10.49 18.96 10.71 19.14C10.93 19.31 11.145 19.535 11.355 19.815L19.905 30H17.385C17.195 30 17.03 29.99 16.89 29.97C16.76 29.94 16.645 29.9 16.545 29.85C16.445 29.79 16.355 29.725 16.275 29.655C16.205 29.575 16.135 29.485 16.065 29.385L8.655 20.85C8.455 20.6 8.24 20.425 8.01 20.325C7.78 20.215 7.43 20.16 6.96 20.16H5.64V30H2.745V8.505H5.64V17.925ZM28.5633 18.915C29.4033 18.915 30.1433 18.815 30.7833 18.615C31.4333 18.405 31.9733 18.115 32.4033 17.745C32.8433 17.365 33.1733 16.915 33.3933 16.395C33.6133 15.875 33.7233 15.3 33.7233 14.67C33.7233 13.39 33.3033 12.425 32.4633 11.775C31.6233 11.125 30.3633 10.8 28.6833 10.8H25.5033V18.915H28.5633ZM38.4933 30H35.9133C35.3833 30 34.9933 29.795 34.7433 29.385L29.1633 21.705C28.9933 21.465 28.8083 21.295 28.6083 21.195C28.4183 21.085 28.1183 21.03 27.7083 21.03H25.5033V30H22.6083V8.505H28.6833C30.0433 8.505 31.2183 8.645 32.2083 8.925C33.1983 9.195 34.0133 9.59 34.6533 10.11C35.3033 10.63 35.7833 11.26 36.0933 12C36.4033 12.73 36.5583 13.55 36.5583 14.46C36.5583 15.22 36.4383 15.93 36.1983 16.59C35.9583 17.25 35.6083 17.845 35.1483 18.375C34.6983 18.895 34.1433 19.34 33.4833 19.71C32.8333 20.08 32.0933 20.36 31.2633 20.55C31.6333 20.76 31.9533 21.065 32.2233 21.465L38.4933 30ZM52.8319 22.02L49.4569 13.275C49.3569 13.015 49.2519 12.715 49.1419 12.375C49.0319 12.025 48.9269 11.655 48.8269 11.265C48.6169 12.075 48.4019 12.75 48.1819 13.29L44.8069 22.02H52.8319ZM58.8919 30H56.6419C56.3819 30 56.1719 29.935 56.0119 29.805C55.8519 29.675 55.7319 29.51 55.6519 29.31L53.6419 24.12H43.9969L41.9869 29.31C41.9269 29.49 41.8119 29.65 41.6419 29.79C41.4719 29.93 41.2619 30 41.0119 30H38.7619L47.3569 8.505H50.2969L58.8919 30ZM74.1452 10.95H67.1852V30H64.2902V10.95H57.3152V8.505H74.1452V10.95ZM96.228 19.26C96.228 20.87 95.973 22.35 95.463 23.7C94.953 25.04 94.233 26.195 93.303 27.165C92.373 28.135 91.253 28.89 89.943 29.43C88.643 29.96 87.203 30.225 85.623 30.225C84.043 30.225 82.603 29.96 81.303 29.43C80.003 28.89 78.888 28.135 77.958 27.165C77.028 26.195 76.308 25.04 75.798 23.7C75.288 22.35 75.033 20.87 75.033 19.26C75.033 17.65 75.288 16.175 75.798 14.835C76.308 13.485 77.028 12.325 77.958 11.355C78.888 10.375 80.003 9.615 81.303 9.075C82.603 8.535 84.043 8.265 85.623 8.265C87.203 8.265 88.643 8.535 89.943 9.075C91.253 9.615 92.373 10.375 93.303 11.355C94.233 12.325 94.953 13.485 95.463 14.835C95.973 16.175 96.228 17.65 96.228 19.26ZM93.243 19.26C93.243 17.94 93.063 16.755 92.703 15.705C92.343 14.655 91.833 13.77 91.173 13.05C90.513 12.32 89.713 11.76 88.773 11.37C87.833 10.98 86.783 10.785 85.623 10.785C84.473 10.785 83.428 10.98 82.488 11.37C81.548 11.76 80.743 12.32 80.073 13.05C79.413 13.77 78.903 14.655 78.543 15.705C78.183 16.755 78.003 17.94 78.003 19.26C78.003 20.58 78.183 21.765 78.543 22.815C78.903 23.855 79.413 24.74 80.073 25.47C80.743 26.19 81.548 26.745 82.488 27.135C83.428 27.515 84.473 27.705 85.623 27.705C86.783 27.705 87.833 27.515 88.773 27.135C89.713 26.745 90.513 26.19 91.173 25.47C91.833 24.74 92.343 23.855 92.703 22.815C93.063 21.765 93.243 20.58 93.243 19.26ZM111.386 11.865C111.296 12.015 111.196 12.13 111.086 12.21C110.986 12.28 110.861 12.315 110.711 12.315C110.541 12.315 110.341 12.23 110.111 12.06C109.881 11.89 109.591 11.705 109.241 11.505C108.901 11.295 108.486 11.105 107.996 10.935C107.516 10.765 106.931 10.68 106.241 10.68C105.591 10.68 105.016 10.77 104.516 10.95C104.026 11.12 103.611 11.355 103.271 11.655C102.941 11.955 102.691 12.31 102.521 12.72C102.351 13.12 102.266 13.555 102.266 14.025C102.266 14.625 102.411 15.125 102.701 15.525C103.001 15.915 103.391 16.25 103.871 16.53C104.361 16.81 104.911 17.055 105.521 17.265C106.141 17.465 106.771 17.675 107.411 17.895C108.061 18.115 108.691 18.365 109.301 18.645C109.921 18.915 110.471 19.26 110.951 19.68C111.441 20.1 111.831 20.615 112.121 21.225C112.421 21.835 112.571 22.585 112.571 23.475C112.571 24.415 112.411 25.3 112.091 26.13C111.771 26.95 111.301 27.665 110.681 28.275C110.071 28.885 109.316 29.365 108.416 29.715C107.526 30.065 106.511 30.24 105.371 30.24C103.971 30.24 102.701 29.99 101.561 29.49C100.421 28.98 99.4465 28.295 98.6365 27.435L99.4765 26.055C99.5565 25.945 99.6515 25.855 99.7615 25.785C99.8815 25.705 100.011 25.665 100.151 25.665C100.281 25.665 100.426 25.72 100.586 25.83C100.756 25.93 100.946 26.06 101.156 26.22C101.366 26.38 101.606 26.555 101.876 26.745C102.146 26.935 102.451 27.11 102.791 27.27C103.141 27.43 103.536 27.565 103.976 27.675C104.416 27.775 104.911 27.825 105.461 27.825C106.151 27.825 106.766 27.73 107.306 27.54C107.846 27.35 108.301 27.085 108.671 26.745C109.051 26.395 109.341 25.98 109.541 25.5C109.741 25.02 109.841 24.485 109.841 23.895C109.841 23.245 109.691 22.715 109.391 22.305C109.101 21.885 108.716 21.535 108.236 21.255C107.756 20.975 107.206 20.74 106.586 20.55C105.966 20.35 105.336 20.15 104.696 19.95C104.056 19.74 103.426 19.5 102.806 19.23C102.186 18.96 101.636 18.61 101.156 18.18C100.676 17.75 100.286 17.215 99.9865 16.575C99.6965 15.925 99.5515 15.125 99.5515 14.175C99.5515 13.415 99.6965 12.68 99.9865 11.97C100.286 11.26 100.716 10.63 101.276 10.08C101.846 9.53 102.541 9.09 103.361 8.76C104.191 8.43 105.141 8.265 106.211 8.265C107.411 8.265 108.501 8.455 109.481 8.835C110.471 9.215 111.341 9.765 112.091 10.485L111.386 11.865Z" fill="black"/>
-                    <rect x="1" y="27" width="113" height="5" fill="#FDDA24"/>
-                </svg>
-            </a>
-            <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('nav-menu')">
+              <svg width="114" height="36" viewBox="0 0 114 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.64 17.925H6.735C7.115 17.925 7.42 17.88 7.65 17.79C7.88 17.69 8.09 17.525 8.28 17.295L15.435 9.195C15.635 8.935 15.845 8.755 16.065 8.655C16.285 8.555 16.555 8.505 16.875 8.505H19.335L11.145 17.76C10.945 18 10.75 18.2 10.56 18.36C10.38 18.51 10.185 18.635 9.975 18.735C10.245 18.825 10.49 18.96 10.71 19.14C10.93 19.31 11.145 19.535 11.355 19.815L19.905 30H17.385C17.195 30 17.03 29.99 16.89 29.97C16.76 29.94 16.645 29.9 16.545 29.85C16.445 29.79 16.355 29.725 16.275 29.655C16.205 29.575 16.135 29.485 16.065 29.385L8.655 20.85C8.455 20.6 8.24 20.425 8.01 20.325C7.78 20.215 7.43 20.16 6.96 20.16H5.64V30H2.745V8.505H5.64V17.925ZM28.5633 18.915C29.4033 18.915 30.1433 18.815 30.7833 18.615C31.4333 18.405 31.9733 18.115 32.4033 17.745C32.8433 17.365 33.1733 16.915 33.3933 16.395C33.6133 15.875 33.7233 15.3 33.7233 14.67C33.7233 13.39 33.3033 12.425 32.4633 11.775C31.6233 11.125 30.3633 10.8 28.6833 10.8H25.5033V18.915H28.5633ZM38.4933 30H35.9133C35.3833 30 34.9933 29.795 34.7433 29.385L29.1633 21.705C28.9933 21.465 28.8083 21.295 28.6083 21.195C28.4183 21.085 28.1183 21.03 27.7083 21.03H25.5033V30H22.6083V8.505H28.6833C30.0433 8.505 31.2183 8.645 32.2083 8.925C33.1983 9.195 34.0133 9.59 34.6533 10.11C35.3033 10.63 35.7833 11.26 36.0933 12C36.4033 12.73 36.5583 13.55 36.5583 14.46C36.5583 15.22 36.4383 15.93 36.1983 16.59C35.9583 17.25 35.6083 17.845 35.1483 18.375C34.6983 18.895 34.1433 19.34 33.4833 19.71C32.8333 20.08 32.0933 20.36 31.2633 20.55C31.6333 20.76 31.9533 21.065 32.2233 21.465L38.4933 30ZM52.8319 22.02L49.4569 13.275C49.3569 13.015 49.2519 12.715 49.1419 12.375C49.0319 12.025 48.9269 11.655 48.8269 11.265C48.6169 12.075 48.4019 12.75 48.1819 13.29L44.8069 22.02H52.8319ZM58.8919 30H56.6419C56.3819 30 56.1719 29.935 56.0119 29.805C55.8519 29.675 55.7319 29.51 55.6519 29.31L53.6419 24.12H43.9969L41.9869 29.31C41.9269 29.49 41.8119 29.65 41.6419 29.79C41.4719 29.93 41.2619 30 41.0119 30H38.7619L47.3569 8.505H50.2969L58.8919 30ZM74.1452 10.95H67.1852V30H64.2902V10.95H57.3152V8.505H74.1452V10.95ZM96.228 19.26C96.228 20.87 95.973 22.35 95.463 23.7C94.953 25.04 94.233 26.195 93.303 27.165C92.373 28.135 91.253 28.89 89.943 29.43C88.643 29.96 87.203 30.225 85.623 30.225C84.043 30.225 82.603 29.96 81.303 29.43C80.003 28.89 78.888 28.135 77.958 27.165C77.028 26.195 76.308 25.04 75.798 23.7C75.288 22.35 75.033 20.87 75.033 19.26C75.033 17.65 75.288 16.175 75.798 14.835C76.308 13.485 77.028 12.325 77.958 11.355C78.888 10.375 80.003 9.615 81.303 9.075C82.603 8.535 84.043 8.265 85.623 8.265C87.203 8.265 88.643 8.535 89.943 9.075C91.253 9.615 92.373 10.375 93.303 11.355C94.233 12.325 94.953 13.485 95.463 14.835C95.973 16.175 96.228 17.65 96.228 19.26ZM93.243 19.26C93.243 17.94 93.063 16.755 92.703 15.705C92.343 14.655 91.833 13.77 91.173 13.05C90.513 12.32 89.713 11.76 88.773 11.37C87.833 10.98 86.783 10.785 85.623 10.785C84.473 10.785 83.428 10.98 82.488 11.37C81.548 11.76 80.743 12.32 80.073 13.05C79.413 13.77 78.903 14.655 78.543 15.705C78.183 16.755 78.003 17.94 78.003 19.26C78.003 20.58 78.183 21.765 78.543 22.815C78.903 23.855 79.413 24.74 80.073 25.47C80.743 26.19 81.548 26.745 82.488 27.135C83.428 27.515 84.473 27.705 85.623 27.705C86.783 27.705 87.833 27.515 88.773 27.135C89.713 26.745 90.513 26.19 91.173 25.47C91.833 24.74 92.343 23.855 92.703 22.815C93.063 21.765 93.243 20.58 93.243 19.26ZM111.386 11.865C111.296 12.015 111.196 12.13 111.086 12.21C110.986 12.28 110.861 12.315 110.711 12.315C110.541 12.315 110.341 12.23 110.111 12.06C109.881 11.89 109.591 11.705 109.241 11.505C108.901 11.295 108.486 11.105 107.996 10.935C107.516 10.765 106.931 10.68 106.241 10.68C105.591 10.68 105.016 10.77 104.516 10.95C104.026 11.12 103.611 11.355 103.271 11.655C102.941 11.955 102.691 12.31 102.521 12.72C102.351 13.12 102.266 13.555 102.266 14.025C102.266 14.625 102.411 15.125 102.701 15.525C103.001 15.915 103.391 16.25 103.871 16.53C104.361 16.81 104.911 17.055 105.521 17.265C106.141 17.465 106.771 17.675 107.411 17.895C108.061 18.115 108.691 18.365 109.301 18.645C109.921 18.915 110.471 19.26 110.951 19.68C111.441 20.1 111.831 20.615 112.121 21.225C112.421 21.835 112.571 22.585 112.571 23.475C112.571 24.415 112.411 25.3 112.091 26.13C111.771 26.95 111.301 27.665 110.681 28.275C110.071 28.885 109.316 29.365 108.416 29.715C107.526 30.065 106.511 30.24 105.371 30.24C103.971 30.24 102.701 29.99 101.561 29.49C100.421 28.98 99.4465 28.295 98.6365 27.435L99.4765 26.055C99.5565 25.945 99.6515 25.855 99.7615 25.785C99.8815 25.705 100.011 25.665 100.151 25.665C100.281 25.665 100.426 25.72 100.586 25.83C100.756 25.93 100.946 26.06 101.156 26.22C101.366 26.38 101.606 26.555 101.876 26.745C102.146 26.935 102.451 27.11 102.791 27.27C103.141 27.43 103.536 27.565 103.976 27.675C104.416 27.775 104.911 27.825 105.461 27.825C106.151 27.825 106.766 27.73 107.306 27.54C107.846 27.35 108.301 27.085 108.671 26.745C109.051 26.395 109.341 25.98 109.541 25.5C109.741 25.02 109.841 24.485 109.841 23.895C109.841 23.245 109.691 22.715 109.391 22.305C109.101 21.885 108.716 21.535 108.236 21.255C107.756 20.975 107.206 20.74 106.586 20.55C105.966 20.35 105.336 20.15 104.696 19.95C104.056 19.74 103.426 19.5 102.806 19.23C102.186 18.96 101.636 18.61 101.156 18.18C100.676 17.75 100.286 17.215 99.9865 16.575C99.6965 15.925 99.5515 15.125 99.5515 14.175C99.5515 13.415 99.6965 12.68 99.9865 11.97C100.286 11.26 100.716 10.63 101.276 10.08C101.846 9.53 102.541 9.09 103.361 8.76C104.191 8.43 105.141 8.265 106.211 8.265C107.411 8.265 108.501 8.455 109.481 8.835C110.471 9.215 111.341 9.765 112.091 10.485L111.386 11.865Z" fill="black"></path>
+                  <rect x="1" y="27" width="113" height="5" fill="#FDDA24"></rect>
+              </svg>
+          </a>
+  
+             <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" id="hamburgerbtn">
               <span class="block relative w-6 h-px rounded-sm bg-black"></span>
               <span class="block relative w-6 h-px rounded-sm bg-black mt-1"></span>
               <span class="block relative w-6 h-px rounded-sm bg-black mt-1"></span>
             </button> 
           </div>
-          <div class="lg:flex flex-grow items-center" id="nav-menu">
-            <ul class="flex flex-col lg:flex-row list-none ml-auto">
-                <li class="nav-item">
-                  <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#about">
-                    About
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#services">
-                    Services
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#projects">
-                    Portfolio
-                  </a>
-                </li>
-                <li class="nav-item">
-                    <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#contact">
-                      Contact
-                    </a>
-                  </li>
-            </ul>
-          </div>
-        </div>
+         
+          <ul class="hidden md:flex-row md:flex items-center" id="mobileMenu">
+            <li class="nav-item">
+              <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#about">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#services">
+                Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#projects">
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="xl:text-2xl text-lg px-3 py-2 flex items-center text-base font-normal leading-7 text-black hover:opacity-75" href="#contact">
+                  Contact
+                </a>
+              </li>
+          </ul>
       </nav>
+  </div>
+
 
       <!-- HERO -->
-      <section class="h-full md:p-8">
+      <section class="h-full md:p-8 py-10">
         <div class="flex flex-wrap items-center">
             <div class="w-full md:w-5/12 px-4 md:mr-auto md:ml-auto">
                 <h1 class="title-font md:text-4xl mb-4 font-semibold text-black text-2xl md:leading-10">We Create <span class="text-yellow-400">Digital Products</span> & <span class="text-yellow-400">Experiences</span>.
                 </h1>
                 <div class="justify-center">
-                    <button class="cta ml-2 inline-flex text-white border-0 mb-3 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none hover:bg-gray-300">View Work</button>
+                    <button class="cta ml-2 inline-flex text-white border-0 mb-3 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none">View Work</button>
                 </div>
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -71,31 +81,30 @@
     <!-- END HERO -->
 
     <!-- ABOUT -->
-    <section class="h-full bg-gray-50 pt-16 pb-16" id="about">
-        <div class="flex flex-wrap items-center">
-            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div class="relative flex flex-col break-words bg-white w-full shadow-lg rounded-lg">
-                  <img class="object-cover object-center rounded" src="./assets/images/do.png">
-                </div>
-              </div>
-            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                <h1 class="title-font xl:text-3xl mt-6 md:mt-0 mb-2 font-semibold text-black text-2xl">Why Us?
-                </h1>
-                <div class="lg:mx-0 w-1/4 xl:w-1/5 border-b-4 border-yellow-400"></div>
-                <p class="xl:text-xl text-lg font-normal leading-6 text-black mt-3">
-                    We are a warm and supportive team for our clients and their users. We believe that complex solutions are a sign of mediocrity
-                </p>
-                <div class="justify-center mt-6">
-                    <button class="cta ml-2 inline-flex text-white bg-gray-200 border-0 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none hover:bg-gray-300">Read More</button>
-                </div>
-            </div>
+    <section class="h-full bg-gray-50 md:pt-16 md:pb-16" id="about">
+      <div class="flex flex-col-reverse md:flex-row">
+        <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+          <div class="relative flex flex-col break-words bg-white w-full shadow-lg rounded-lg">
+            <img class="object-cover object-center rounded" src="./assets/images/do.png">
           </div>
         </div>
+        <div class="w-full md:w-4/12 px-4 mr-auto ml-auto md:mt-auto md:mb-auto mb-3">
+          <h1 class="title-font xl:text-3xl mt-6 md:mt-0 mb-2 font-semibold text-black text-2xl">Why Us?
+          </h1>
+          <div class="lg:mx-0 w-1/4 xl:w-1/5 border-b-4 border-yellow-400"></div>
+          <p class="xl:text-xl text-lg font-normal leading-6 text-black mt-3">
+              We are a warm and supportive team for our clients and their users. We believe that complex solutions are a sign of mediocrity
+          </p>
+          <div class="justify-center mt-6">
+              <button class="cta ml-2 inline-flex text-white bg-gray-200 border-0 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none">Read More</button>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- END ABOUT -->
 
     <!-- SERVICES -->
-    <section class="pb-16" id="services">
+    <section class="pt-16 md:pt-0 pb-16" id="services">
 
         
         <div class="flex flex-wrap items-center">
@@ -113,9 +122,9 @@
                 <div class="container w-full mx-auto mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
                 <div class="bg-white flex flex-col p-8 shadow-lg">
                   
-                   <img src="./assets/images/design.svg" alt="">
+                   <img src="./assets/images/design.svg" alt="" class="w-32 h-32 ml-auto mr-auto">
                   
-                  <div class="flex-grow text-black text-center" class="w-48 h-48">
+                  <div class="flex-grow text-black text-center">
                     <h2 class="xl:text-3xl text-2xl title-font font-semibold leading-9 mb-3 mt-4">Design</h2>
                     <p class="leading-6 xl:text-xl text-lg font-normal">
                         User Centric designs to improve usability for customers and employees
@@ -123,7 +132,7 @@
                   </div>
                 </div>
                 <div class="bg-white flex flex-col p-8 shadow-lg">
-                  <img src="./assets/images/dev.svg" alt="">
+                  <img src="./assets/images/dev.svg" alt="" class="w-32 h-32 ml-auto mr-auto">
                   <div class="flex-grow text-black text-center">
                     <h2 class="xl:text-3xl text-2xl title-font font-semibold leading-9 mb-3 mt-4">Development</h2>
                     <p class="leading-6 xl:text-xl text-lg font-normal">
@@ -137,7 +146,7 @@
               <div class="container mx-auto mt-20 grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="bg-white flex flex-col p-8 shadow-lg">
                   
-                   <img src="./assets/images/strat.svg" alt="" class="w-48 h-48">
+                   <img src="./assets/images/strat.svg" alt="" class="w-32 h-32 ml-auto mr-auto">
                   
                   <div class="flex-grow text-black text-center">
                     <h2 class="xl:text-3xl text-2xl title-font font-semibold leading-9 mb-3 mt-4">Strategy</h2>
@@ -147,7 +156,7 @@
                   </div>
                 </div>
                 <div class="bg-white flex flex-col p-8 shadow-lg">
-                  <img src="./assets/images/implement.svg" alt="" class="w-48 h-48">
+                  <img src="./assets/images/implement.svg" alt="" class="w-32 h-32 ml-auto mr-auto">
                   <div class="flex-grow text-black text-center">
                     <h2 class="xl:text-3xl text-2xl title-font font-semibold leading-9 mb-3 mt-4">Implementation</h2>
                     <p class="leading-6 xl:text-xl text-lg font-normal">
@@ -166,46 +175,46 @@
 
     <!-- PROJECTS -->
     <section class="bg-gray-50 pb-20" id="projects">
-        <div class="flex flex-wrap items-center">
-            <div class="w-full xl:w-7/12 lg:w-6/12 px-4 mr-auto ml-auto">
-                <div class="container mx-auto mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
-                    <div class="flex flex-col p-8 shadow-lg bg-no-repeat bg-cover relative items-center" style="background-image: url(./assets/images/axios_1.png);">
-                        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black inset-0 z-0"></span>
-                      
-                      <div class="flex-grow text-white text-center z-10">
-                        <p class="leading-5 md:text-base text-sm font-semibold">
-                            Web Design Project for Axios Ltd
-                        </p>
-                        <div class="justify-center">
-                            <button class="cta ml-4 mt-72 inline-flex text-white border-0 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none hover:bg-gray-300">Read More</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex flex-col p-8 shadow-lg bg-no-repeat bg-cover relative items-center" style="background-image: url(./assets/images/axios_2.png);">
-                        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black inset-0 z-0"></span>
-                      
-                      <div class="flex-grow text-white text-center z-10">
-                        <p class="leading-5 md:text-base text-sm font-semibold">
-                            Web Design Project for Axios Ltd
-                        </p>
-                        <div class="justify-center">
-                            <button class="cta ml-4 mt-72 inline-flex text-white border-0 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none hover:bg-gray-300">Read More</button>
-                        </div>
-                      </div>
-                    </div>
+      <div class="flex flex-col-reverse md:flex-row">
+        <div class="w-full md:w-8/12 px-4 mr-auto ml-auto">
+          <div class="container mx-auto mt-8 md:mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
+              <div class="flex flex-col p-8 shadow-lg bg-no-repeat bg-cover relative items-center" style="background-image: url(./assets/images/axios_1.png);">
+                  <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black inset-0 z-0"></span>
+                
+                <div class="flex-grow text-white text-center z-10">
+                  <p class="leading-5 md:text-base text-sm font-semibold">
+                      Web Design Project for Axios Ltd
+                  </p>
+                  <div class="justify-center">
+                      <button class="cta ml-4 mt-72 inline-flex text-white border-0 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none">Read More</button>
+                  </div>
                 </div>
-    
               </div>
-            <div class="w-full lg:w-4/12 px-4 mr-auto ml-auto">
-                <h1 class="title-font xl:text-3xl text-2xl mb-2 font-semibold text-black mt-3">Our Portfolio
-                </h1>
-                <div class="lg:mx-0 w-1/4 xl:w-1/5 border-b-4 border-yellow-400"></div>
-                <p class="xl:text-xl text-lg font-normal leading-6 text-black mt-3">
-                    Over 12 years in practice, we are trusted by different global brands
-                </p>
-            </div>
+              <div class="flex flex-col p-8 shadow-lg bg-no-repeat bg-cover relative items-center" style="background-image: url(./assets/images/axios_2.png);">
+                  <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black inset-0 z-0"></span>
+                
+                <div class="flex-grow text-white text-center z-10">
+                  <p class="leading-5 md:text-base text-sm font-semibold">
+                      Web Design Project for Axios Ltd
+                  </p>
+                  <div class="justify-center">
+                      <button class="cta ml-4 mt-72 inline-flex text-white border-0 py-2 px-4 rounded text-base font-normal leading-7 focus:outline-none">Read More</button>
+                  </div>
+                </div>
+              </div>
           </div>
+
         </div>
+      <div class="w-full md:w-3/12 px-4 mr-auto ml-auto mt-auto mb-auto">
+          <h1 class="title-font xl:text-3xl text-2xl mb-2 font-semibold text-black md:mt-0 mt-3">Our Portfolio
+          </h1>
+          <div class="lg:mx-0 w-1/4 xl:w-1/5 border-b-4 border-yellow-400"></div>
+          <p class="xl:text-xl text-lg font-normal leading-6 text-black mt-3">
+              Over 12 years in practice, we are trusted by different global brands
+          </p>
+      </div>
+    </div>
+  </div>
     </section>
     <!-- END PRODUCTS -->
     
@@ -225,7 +234,7 @@
                     <input type="tel" name="" id="" placeholder="Number" class="in-bg rounded-lg border p-2 w-full md:w-1/2 text-xl font-normal leading-6 text-black mb-3 opacity-10">
                 </div>
                 <textarea name="" id="" cols="10" rows="6" placeholder="Message" class="in-bg rounded-lg border p-2 md:mt-3 w-full text-xl font-normal leading-6 text-black opacity-10"></textarea>
-                <input type="submit" value="Send Message" class="cta w-full md:mt-6 text-white text-xl font-normal leading-6 text-black p-3">
+                <input type="submit" value="Send Message" class="cta w-full md:mt-6 text-white text-xl font-normal leading-6 text-black p-3 focus:outline-none">
         
             </form>
         
@@ -286,15 +295,27 @@
     .cta, .bg-foot, .in-bg{
         background-color: #085981;
     }
+    .active{
+        display: block;
+    }   
 
 </style>
     
 <script>
     function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
+      document.getElementById(collapseID).classList.toggle("hidden");
     }
   </script>
+  <script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function(){
+        mobileMenu.classList.toggle('active');
+    });
+</script>
     
 </body>
 </html>
